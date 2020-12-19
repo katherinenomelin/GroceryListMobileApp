@@ -31,8 +31,8 @@ namespace GroceryListMobileApp
         Realm realmDB;
         string nameofuserValue;
         string emailValue;
-        int phonenumberValue;
-        int ageValue;
+        //int phonenumberValue;
+        //int ageValue;
         string passwordValue;
 
 

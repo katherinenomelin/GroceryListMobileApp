@@ -293,3 +293,16 @@ C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\Grocer
 C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\GroceryListMobileApp\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\GroceryListMobileApp\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\GroceryListMobileApp\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\GroceryListMobileApp\obj\Debug\90\res\layout\myview.xml
+C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\GroceryListMobileApp\obj\Debug\90\res\layout\myviewintothelist.xml
+C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\GroceryListMobileApp\obj\Debug\90\res\drawable\cakeslice.png
+C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\GroceryListMobileApp\obj\Debug\90\res\drawable\cheese.png
+C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\GroceryListMobileApp\obj\Debug\90\res\drawable\egg.png
+C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\GroceryListMobileApp\obj\Debug\90\res\drawable\fish.png
+C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\GroceryListMobileApp\obj\Debug\90\res\drawable\fried.png
+C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\GroceryListMobileApp\obj\Debug\90\res\drawable\icec.png
+C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\GroceryListMobileApp\obj\Debug\90\res\drawable\meat.png
+C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\GroceryListMobileApp\obj\Debug\90\res\drawable\milk.png
+C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\GroceryListMobileApp\obj\Debug\90\res\drawable\pizza.png
+C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\GroceryListMobileApp\obj\Debug\90\android\src\crc64b4e32e2f7fe53414\ItemImageAdapter.java
+C:\Users\16475\Documents\GitHub\GroceryListMobileApp\GroceryListMobileApp\GroceryListMobileApp\obj\Debug\90\android\src\crc64b4e32e2f7fe53414\MyCustomAdapter.java

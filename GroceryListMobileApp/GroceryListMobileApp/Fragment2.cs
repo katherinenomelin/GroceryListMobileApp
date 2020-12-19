@@ -10,24 +10,28 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using Realms;
 
 namespace GroceryListMobileApp
 {
     public class Fragment2 : Fragment
     {
-        ListView myFirstList;//********ListViewCode
+        ListView myFavoriteList;//********ListViewCode
+        Realm realmDB;
+        List<string> dbList = new List<string>();
         Activity context;   //*********ListViewCode
-        string[] cars = { "Honda", "Toyota", "BMV" };
+        //string[] cars = { "Honda", "Toyota", "BMV" };
 
-        public Fragment2(Activity passedContext)    //Activity:passedContext is a ListView part of the code
+        public Fragment2(Activity contextValue)    //Activity:passedContext is a ListView part of the code
         {
-            this.context = passedContext;//********ListViewCode
+            this.context = contextValue;
         }
 
 
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            realmDB = Realm.GetInstance();
 
             // Create your fragment here
         }
@@ -36,12 +40,18 @@ namespace GroceryListMobileApp
         {
             // Use this to return your custom view for this Fragment
             View myView = inflater.Inflate(Resource.Layout.SecondTab, container, false); //******New Code
-            myFirstList = myView.FindViewById<ListView>(Resource.Id.listView1); //********ListViewCode
-            ArrayAdapter arrayAdapter = new ArrayAdapter(context, Android.Resource.Layout.SimpleListItem1, cars); //********ListViewCode
 
-            myFirstList.SetAdapter(arrayAdapter);   //********ListViewCode
+            myFavoriteList = myView.FindViewById<ListView>(Resource.Id.listViewID); //********ListViewCode
+            //ArrayAdapter arrayAdapter = new ArrayAdapter(context, Android.Resource.Layout.SimpleListItem1, cars); //********ListViewCode
+            //myFirstList.SetAdapter(arrayAdapter);   //********ListViewCode
 
             return myView; //NewCode
         }
+
+        //public List<string> getDataFromRealmDB()
+        //{
+        //    List<string>
+        //}
+
     }
 }

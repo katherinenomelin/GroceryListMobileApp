@@ -24,11 +24,11 @@ public class Fragment3
 			mono.android.TypeManager.Activate ("GroceryListMobileApp.Fragment3, GroceryListMobileApp", "", this, new java.lang.Object[] {  });
 	}
 
-	public Fragment3 (crc64b4e32e2f7fe53414.Frame p0)
+	public Fragment3 (android.app.Activity p0)
 	{
 		super ();
 		if (getClass () == Fragment3.class)
-			mono.android.TypeManager.Activate ("GroceryListMobileApp.Fragment3, GroceryListMobileApp", "GroceryListMobileApp.Frame, GroceryListMobileApp", this, new java.lang.Object[] { p0 });
+			mono.android.TypeManager.Activate ("GroceryListMobileApp.Fragment3, GroceryListMobileApp", "Android.App.Activity, Mono.Android", this, new java.lang.Object[] { p0 });
 	}
 
 

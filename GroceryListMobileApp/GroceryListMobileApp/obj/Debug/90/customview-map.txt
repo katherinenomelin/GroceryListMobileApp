@@ -17,10 +17,14 @@ foreground;obj\Debug\90\res\mipmap-anydpi-v26\ic_launcher.xml
 foreground;obj\Debug\90\res\mipmap-anydpi-v26\ic_launcher_round.xml
 FrameLayout;obj\Debug\90\res\layout\framelayout.xml
 ImageView;obj\Debug\90\res\layout\activity_main.xml
+ImageView;obj\Debug\90\res\layout\myview.xml
+ImageView;obj\Debug\90\res\layout\myviewintothelist.xml
 item;obj\Debug\90\res\values\styles.xml
 LinearLayout;obj\Debug\90\res\layout\activity_main.xml
 LinearLayout;obj\Debug\90\res\layout\firsttab.xml
 LinearLayout;obj\Debug\90\res\layout\framelayout.xml
+LinearLayout;obj\Debug\90\res\layout\myview.xml
+LinearLayout;obj\Debug\90\res\layout\myviewintothelist.xml
 LinearLayout;obj\Debug\90\res\layout\register.xml
 LinearLayout;obj\Debug\90\res\layout\secondtab.xml
 LinearLayout;obj\Debug\90\res\layout\thirdtab.xml
@@ -39,6 +43,7 @@ string;obj\Debug\90\res\values\strings.xml
 style;obj\Debug\90\res\values\styles.xml
 TextView;obj\Debug\90\res\layout\activity_main.xml
 TextView;obj\Debug\90\res\layout\firsttab.xml
+TextView;obj\Debug\90\res\layout\myview.xml
 TextView;obj\Debug\90\res\layout\register.xml
 TextView;obj\Debug\90\res\layout\secondtab.xml
 TextView;obj\Debug\90\res\layout\thirdtab.xml

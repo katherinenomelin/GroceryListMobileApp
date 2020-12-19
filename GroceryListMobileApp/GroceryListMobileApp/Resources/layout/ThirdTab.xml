@@ -7,15 +7,11 @@ android:background="#ebf0ec"
 android:gravity="center"
 android:layout_height="match_parent">
 
-<EditText
-android:layout_marginTop="90dp"
-android:background="#fcfcfc"
+<TextView
 android:layout_width="300dp"
-android:hint=" Movie .."
-android:textSize="14dp"
-android:inputType="text"
-android:id="@+id/addNameID"
-android:layout_height="40dp"/>
+android:layout_height="20dp"
+android:layout_marginTop="130dp"
+android:text="Select your grocery List:"/>
 
     <TextView
         android:layout_width="300dp"
@@ -23,8 +19,8 @@ android:layout_height="40dp"/>
         android:layout_marginTop="10dp"
         android:text="Select Item:"/>
     <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
         android:id="@+id/groceryImageID"/>
     <TextView
         android:layout_width="300dp"

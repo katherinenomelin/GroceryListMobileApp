@@ -43,6 +43,7 @@ namespace GroceryListMobileApp
             AddTabToActionBar("Third Tab"); //Second Tab
         }
 
+
         void AddTabToActionBar(string tabTitle)
         {
             Android.App.ActionBar.Tab tab = ActionBar.NewTab();
@@ -56,8 +57,8 @@ namespace GroceryListMobileApp
         {
             Android.App.ActionBar.Tab tab = (Android.App.ActionBar.Tab)sender;
             //Log.Debug(Tag, "The tab {0} has been selected.", tab.Text); 
-            Fragment frag = _FragmentsArray[tab.Position];                                  //**************Habilitar esto una vez creo el array
-            tabEventArgs.FragmentTransaction.Replace(Resource.Id.frameLayout1, frag);       //******Habilitar esto tambien una vez tengo el array
+            Fragment frag = _FragmentsArray[tab.Position];
+            tabEventArgs.FragmentTransaction.Replace(Resource.Id.frameLayout1, frag);
         }
 
     }
