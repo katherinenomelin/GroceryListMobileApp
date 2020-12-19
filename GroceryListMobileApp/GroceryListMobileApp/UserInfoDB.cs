@@ -17,12 +17,19 @@ namespace GroceryListMobileApp
     public class UserInfoDB : RealmObject
     {
         public string nameofuser { get; set; }
+        
         public string email { get; set; }
+        
         public string password { get; set; }
+        
         public int phonenumber { get; set; }
+        
         public int age { get; set; }
+        
         public int itemimage { get; set; }
+        
         public int itemquantity { get; set; }
+        
         public string itemimagename { get; set; }
 
     }
