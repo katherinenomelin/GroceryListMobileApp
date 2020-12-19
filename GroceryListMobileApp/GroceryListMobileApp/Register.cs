@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Realms;
 
-namespace GroceryListMobileApp
+namespace Katherine_Lopez_Term_Project_V1
 {
     [Activity(Label = "Register")]
     public class Register : Activity
@@ -106,8 +106,12 @@ namespace GroceryListMobileApp
                     {
                         realmDB.Add(saveUserInfo);
                     });
-
-                    Toast.MakeText(this, "User Saved! ", ToastLength.Short).Show();
+                    nameofuser.Text = "";
+                    email.Text = "";
+                    age.Text = "";
+                    phonenumber.Text = "";
+                    password.Text = "";
+                    Toast.MakeText(this, "User Saved! ", ToastLength.Short).Show(); //EMPTY THE FIELDS AFTER SIGNUP
                 }
             }
         }
