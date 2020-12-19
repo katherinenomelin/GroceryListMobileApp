@@ -1,4 +1,5 @@
-﻿using System;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,42 +17,69 @@ namespace GroceryListMobileApp
 {
     public class Fragment2 : Fragment
     {
-        ListView myFavoriteList;//********ListViewCode
+        Button saveBtn;
+        Button submit;
+        ListView listView;
+        Spinner spinnerView;
+        Spinner clothingImage;
+
         Realm realmDB;
-        List<string> dbList = new List<string>();
-        Activity context;   //*********ListViewCode
-        //string[] cars = { "Honda", "Toyota", "BMV" };
+        MyCustomAdapter myAdapter;
 
-        public Fragment2(Activity contextValue)    //Activity:passedContext is a ListView part of the code
+        List<MyModel> myOwnList = new List<MyModel>();
+        List<int> myitemQuantityList = new List<int>();
+        List<ItemImageModel> clothingItemImage = new List<ItemImageModel>();
+        private Activity context;
+
+
+        public Fragment2(Activity passedContext)
         {
-            this.context = contextValue;
+            this.context = passedContext;
         }
-
 
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
             realmDB = Realm.GetInstance();
 
-            // Create your fragment here
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            // Use this to return your custom view for this Fragment
-            View myView = inflater.Inflate(Resource.Layout.SecondTab, container, false); //******New Code
 
-            myFavoriteList = myView.FindViewById<ListView>(Resource.Id.listViewID); //********ListViewCode
-            //ArrayAdapter arrayAdapter = new ArrayAdapter(context, Android.Resource.Layout.SimpleListItem1, cars); //********ListViewCode
-            //myFirstList.SetAdapter(arrayAdapter);   //********ListViewCode
 
-            return myView; //NewCode
+
+            View myView = inflater.Inflate(Resource.Layout.SecondTab, container, false);
+
+            listView = myView.FindViewById<ListView>(Resource.Id.listViewID);
+
+            myOwnList = getDataFromRealmDB();
+            myAdapter = new MyCustomAdapter(context, myOwnList);
+            listView.Adapter = myAdapter;
+
+            return myView;
         }
 
-        //public List<string> getDataFromRealmDB()
-        //{
-        //    List<string>
-        //}
 
+
+        public List<MyModel> getDataFromRealmDB()
+        {
+
+            List<MyModel> dbRecordList = new List<MyModel>();
+
+            var resultCollection = realmDB.All<UserInfoDB>();
+
+
+            foreach (UserInfoDB newObj in resultCollection)
+            {
+                int itemimagefromDB = newObj.itemimage;
+                int itemquantityfromDB = newObj.itemquantity;
+
+                MyModel temp = new MyModel(itemimagefromDB, itemquantityfromDB);
+                dbRecordList.Add(temp);
+            }
+            return dbRecordList;
+        }
     }
 }
