@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,15 +13,25 @@ using Android.Widget;
 using Realms;
 
 
-namespace GroceryListMobileApp
+namespace Katherine_Lopez_Term_Project_V1
 {
     public class Fragment1 : Fragment
     {
         TextView userinfo;
         UserInfoDB userinfodbObj;
+        TextView email;
+        TextView phonenumber;
+        TextView name;
+        TextView age;
         Activity context;
 
-        public Fragment1(UserInfoDB userInfo)
+        Realm realmDB;
+        string changeName;
+        string changeEmail;
+        string changePhone;
+        string changeAge;
+
+        public Fragment1( UserInfoDB userInfo)
         {
             this.userinfodbObj = userInfo;
             //this.context = context;
@@ -37,15 +47,45 @@ namespace GroceryListMobileApp
         {
             // Use this to return your custom view for this Fragment
 
-            View myView = inflater.Inflate(Resource.Layout.FirstTab, container, false); //******New Code
+            View myView = inflater.Inflate(Resource.Layout.FirstTab, container, false);
 
 
             userinfo = myView.FindViewById<TextView>(Resource.Id.textView1);
-
+            email = myView.FindViewById<TextView>(Resource.Id.emailID);
+            phonenumber = myView.FindViewById<TextView>(Resource.Id.phonenumberID);
+            name = myView.FindViewById<TextView>(Resource.Id.nameofuserID);
+            age = myView.FindViewById<TextView>(Resource.Id.ageID);
 
             userinfo.Text = userinfodbObj.nameofuser;
+            email.Text = userinfodbObj.email;
+            name.Text = userinfodbObj.nameofuser;
+           
 
             return myView;
+        }
+        private void changeUserInfo(object sender, EventArgs e)
+        {
+            changeName = name.Text;
+
+            changePhone = phonenumber.Text;
+
+            changeAge = age.Text;
+
+            UserInfoDB saveUserData = new UserInfoDB();
+
+            saveUserData.nameofuser = changeName;
+
+
+            var toast = Toast.MakeText(context, "Your profile has been updated.", ToastLength.Short);
+            toast.Show();
+
+            realmDB.Write(() =>
+            {
+                realmDB.Add(saveUserData);
+            });
+            name.Text = changeName;
+
+
         }
     }
 }
