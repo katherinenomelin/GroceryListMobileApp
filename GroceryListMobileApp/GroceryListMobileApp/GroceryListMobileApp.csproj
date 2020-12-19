@@ -66,6 +66,7 @@
     <Compile Include="Fragment3.cs" />
     <Compile Include="Frame.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="MyModel.cs" />
     <Compile Include="Register.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
