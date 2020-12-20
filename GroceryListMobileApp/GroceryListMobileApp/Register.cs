@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Realms;
 
-namespace Katherine_Lopez_Term_Project_V1
+namespace GroceryListMobileApp
 {
     [Activity(Label = "Register")]
     public class Register : Activity
