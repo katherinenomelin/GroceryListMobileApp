@@ -13,7 +13,7 @@ using Android.Widget;
 using Realms;
 
 
-namespace Katherine_Lopez_Term_Project_V1
+namespace GroceryListMobileApp
 {
     public class Fragment1 : Fragment
     {
